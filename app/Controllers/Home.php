@@ -18,4 +18,8 @@ class Home extends BaseController
     {
         return view('v_keranjang');
     }
+    public function profile(): string
+    {
+        return view('v_profile');
+    }
 }
