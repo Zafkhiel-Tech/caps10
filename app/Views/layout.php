@@ -42,6 +42,16 @@ if(uri_string()!=""){
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .modal {
+        z-index: 1055 !important;
+    }
+    .<style>
+    .modal-backdrop { display: none !important; }
+</style>
+    
+</style>
 </head>
 
 <body>
@@ -62,7 +72,7 @@ if(uri_string()!=""){
 	  <li class="breadcrumb-item"><?php echo $hlm?></li> 
 	  <?php
 	}
-  ?> 
+  ?>  
 </ol>
       </nav>
     </div><!-- End Page Title -->

@@ -6,12 +6,12 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Auth implements FilterInterface
+class Guest implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (!session()->get('isLoggedIn')) {
-            return redirect()->to('login');
+        if (session()->get('isLoggedIn')) {
+            return redirect()->to('/');
         }
     }
 

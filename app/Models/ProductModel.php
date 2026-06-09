@@ -10,7 +10,7 @@ class ProductModel extends Model
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = true; //disesuaikan
+    protected $useSoftDeletes   = false; //disesuaikan
     protected $protectFields    = true;
     protected $allowedFields    = ['nama','harga','jumlah','foto']; //disesuaikan
 
