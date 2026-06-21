@@ -19,6 +19,10 @@
     Tambah Data
 </button>
 
+<a class="btn btn-success" target="_blank" href="<?= base_url()?>produk/download">
+    Download Data
+</a>
+
 <!-- Tabel produk -->
 <table class="table datatable">
     <thead>

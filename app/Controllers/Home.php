@@ -9,6 +9,7 @@ class Home extends BaseController
     protected $productModel;
 
     function __construct(){
+        helper(['number', 'form']); // tambahkan ini
         $this->productModel = new ProductModel();
     }
 
@@ -18,4 +19,4 @@ class Home extends BaseController
             'products' => $this->productModel->findAll()
         ]);
     }
-}   
+}
