@@ -51,6 +51,8 @@ if (session()->getFlashData('success')) {
 
 <button type="submit" class="btn btn-primary">Perbarui Keranjang</button>
 <a class="btn btn-warning" href="<?= base_url() ?>keranjang/clear">Kosongkan Keranjang</a>
+<a href="<?= base_url('checkout') ?>" class="btn btn-success">Selesai Belanja</a>
  
+<?= form_close() ?> 
 <?= form_close() ?>
 <?= $this->endSection() ?>

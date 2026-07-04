@@ -1,0 +1,7 @@
+### Cek Ongkir JNE
+POST https://rajaongkir.komerce.id/api/v1/calculate/domestic-cost
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+key: Zj5eJy1z27822ccb10d9e5bcP2hO2EP5
+
+origin=64999&destination=64942&weight=1000&courier=jne

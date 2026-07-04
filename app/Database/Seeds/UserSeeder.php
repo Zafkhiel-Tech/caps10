@@ -22,4 +22,4 @@ class UserSeeder extends Seeder
             $this->db->table('user')->insert($data);
         }
     }
-}
+}   

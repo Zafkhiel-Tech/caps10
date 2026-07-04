@@ -29,6 +29,11 @@ $routes->group('keranjang', ['filter' => 'auth'], function ($routes) {
 
 $routes->get('keranjang', 'TransaksiController::index', ['filter' => 'auth']);
 
+$routes->group('checkout', ['filter' => 'auth'], function ($routes) {
+    $routes->get('', 'CheckoutController::index');
+    $routes->post('store', 'CheckoutController::store');
+});
+
 $routes->get('faq', 'Home::faq', ['filter' => 'auth']);
 $routes->get('profile', 'Home::profile', ['filter' => 'auth']);
 $routes->get('contact', 'Home::contact', ['filter' => 'auth']);
